@@ -1,0 +1,190 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+   
+   background: pink;
+}
+.header {
+   height: 470px;
+}
+
+.container {
+   width: 1200px;
+   margin: auto;
+}
+hr {
+   width: 1200px;
+   margin: auto;
+   height: 2px;
+}
+
+.nav {
+   display: flex;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.nav_menu {
+   display: flex;
+   width: 100%;
+}
+
+.nav_menu ul {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+}
+
+.nav_menu ul li {
+   list-style: none;
+   text-align: center;
+   margin: 0px 20px;
+   transition: all .2s;
+}
+.nav_menu ul li a {
+   display: block;
+   position: relative;
+   color: black;
+   text-decoration: none;
+   font-size: 17px;
+   transition: all .2s;
+}
+
+.nav_menu ul:hover li a{
+   opacity: .2;
+   filter: blur(3px);
+}
+
+.nav_menu ul li a:hover {
+   transform: scale(1.5);
+   opacity: 1;
+   filter: blur(0);
+}
+
+.nav_menu ul li a:before{
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: #ff497c;
+ transition: transform 0.5s;
+ transform-origin: right;
+ transform: scaleX(0);
+ z-index: -1;
+}
+.nav_menu ul li a:hover:before
+{
+ transition: transform 0.5s;
+ transform-origin: left;
+ transform: scaleX(1);
+}
+
+.header-subtitle {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.box {
+   display: flex;
+   width: 900px;
+   margin: 10px ;
+}
+
+.img-info {
+   width: 400px;
+   height: 300px;
+   margin-right: 20px;
+   margin-left: 10px;
+}
+
+.box-text {
+   margin-top: 20px;
+   font-size: 16px;
+}
+
+.transfer {
+   margin-top: 10px;
+   margin-left: 15px;
+}
+
+.transfer ul {
+   list-style: none;
+}
+
+.transfer ul li {
+   padding-bottom: 5px;
+}
+
+.transfer ul li a {
+   color: black;
+   text-decoration: none;
+   transition: all .3s;
+   font-size: 16px;
+   position: relative;
+}
+.transfer ul li a:before {
+   content: "\2714";
+   top: -2px;
+   left: -15px;
+   border-radius: 50%;
+   position: absolute;
+}
+
+.transfer ul li a:hover {
+   color: #ff497c;
+   font-size: 18px;
+}
+.info {
+   margin-bottom: 20px;
+}
+
+.title {
+   color: black;
+   font-size: 28px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.box-info {
+   display: flex;
+}
+
+.info-text {
+   color: black;
+   font-size: 16px;
+   margin-left: 10px;
+   text-align: center;
+   margin-top: 10px;
+}
+
+.shelk {
+   width: 550px;
+}
+
+.cheleck {
+   width: 600px;
+}
+
+.burana {
+   height: 400px;
+   margin-top: -20px;
+}
+
+.kol {
+   width: 550px;
+   height: 450px;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
